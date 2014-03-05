@@ -9,7 +9,7 @@
     @import "http://webfonts.ru/import/airport.css";
 
     * {
-        transition: 0.4s ease-in all;
+        transition: 0.5s ease-in-out all;
     }
 
     body { background: url(../img/bg-1.png) repeat; }
@@ -42,27 +42,27 @@
          margin: 0 auto;
          font-weight: 300;
          color: #8b736b;
-         margin-bottom: 1em;
+         margin-bottom: 0.6em;
      }
     textarea {
-        min-height: 100px;
+        min-height: 110px;
     }
 
     input:focus, textarea:focus {
         background: #fff;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: inset 0 0px 10px rgba(0,0,0,0.1), 0px 2px 8px rgba(0,0,0,0.2);
-        border: 1px solid rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0.4);
+        box-shadow: inset 0 0px 10px rgba(0,0,0,0.2), 0px 2px 8px rgba(0,0,0,0.30);
+        border: 1px solid rgba(0,0,0,0.4);
     }
 
     input, textarea {
-        color: #6b534b;
+        color: #333;
         width: 85%;
         font-family: 'Open Sans Condensed';
         font-style: italic;
         background: #f1eeea;
-        padding: 15px 20px;
-        font-size:26px;
+        padding: 15px 15px;
+        font-size:23px;
         margin: 20px auto;
         border-radius: 8px;
         outline: 0;

@@ -15,15 +15,14 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-
         <div class="container">
             <h1>Привет! Меня Андрей зовут.</h1>
             <h2 class="hide">Расскажешь историю?</h2>
             <form action="#">
                 <form method="post" action="#">
                     <input class="hide" type="text" name="name" placeholder="Жил был такой-то..." />
-                    <textarea name="text" class="hide" placeholder="И такие дела..."></textarea>
-                    <div id="btn-mail" class="btn-send yellow hide">Ну, в общем, вот.</div>
+                    <textarea name="text" class="hide" placeholder="Ну и, кароче, такие дела..."></textarea>
+                    <div id="btn-mail" class="btn-send yellow hide">Типа, в общем, вот.</div>
             </form>
         </div>
     </body>
