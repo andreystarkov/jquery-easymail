@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Simple jQuery Mail Send Demo</title>
+        <title>Привет! Меня Андрей зовут.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
@@ -16,12 +16,12 @@
     <body>
 
         <div class="container">
-            <h1>Say something!</h1>
+            <h1>Расскажи мне историю.</h1>
             <form action="#">
                 <form method="post" action="#">
-                    <input type="text" name="name" placeholder="Your name." />
-                    <textarea name="text" placeholder="Your Message."></textarea>
-                    <div id="btn-mail" class="btn-send yellow">Okay, let's go!</div>
+                    <input type="text" name="name" placeholder="Кто?" />
+                    <textarea name="text" placeholder="Что?"></textarea>
+                    <div id="btn-mail" class="btn-send yellow">Отправить</div>
             </form>
         </div>
 
@@ -41,18 +41,15 @@
 
               var status = sendMail(name, text,
               function(){
-                // if success
-                $('#btn-mail').removeClass('yellow').addClass('success').html('Thank you!');
+                $('#btn-mail').removeClass('yellow').addClass('success').html('ммм.. интересно!');
               });
 
-              // if already sent
               if (status == 'sent'){
-                $('#btn-mail').html('Already sent. Wait a bit!');
+                $('#btn-mail').html('Подожди немного.');
               }
 
-              // if text is empty
               if (status == 'empty'){
-                $('#btn-mail').html('Write something!');
+                $('#btn-mail').html('Напиши что нибудь.');
               }
             });
 
