@@ -10,51 +10,28 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
         <div class="container">
-            <h1>Расскажи мне историю.</h1>
+            <h1>Привет! Меня Андрей зовут.</h1>
+            <h2 class="hide">Расскажешь историю?</h2>
             <form action="#">
                 <form method="post" action="#">
-                    <input type="text" name="name" placeholder="Кто?" />
-                    <textarea name="text" placeholder="Что?"></textarea>
-                    <div id="btn-mail" class="btn-send yellow">Отправить</div>
+                    <input class="hide" type="text" name="name" placeholder="Жил был такой-то..." />
+                    <textarea name="text" class="hide" placeholder="И такие дела..."></textarea>
+                    <div id="btn-mail" class="btn-send yellow hide">Ну, в общем, вот.</div>
             </form>
         </div>
-
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/sendmail.js"></script>
-        <script src="js/cookie.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-        $(function(){
-
-           $('#btn-mail').click( function(){
-
-              var name = $( "input[name$='name']" ).val(),
-              back = $( "input[name$='back']" ).val(),
-              text = $( "textarea[name$='text']" ).val();
-
-              var status = sendMail(name, text,
-              function(){
-                $('#btn-mail').removeClass('yellow').addClass('success').html('ммм.. интересно!');
-              });
-
-              if (status == 'sent'){
-                $('#btn-mail').html('Подожди немного.');
-              }
-
-              if (status == 'empty'){
-                $('#btn-mail').html('Напиши что нибудь.');
-              }
-            });
-
-        });
-        </script>
-
     </body>
+
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="http://ukushuka56.ru/js/shuffle.js"></script>
+    <script src="js/sendmail.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/main.js"></script>
+
 </html>

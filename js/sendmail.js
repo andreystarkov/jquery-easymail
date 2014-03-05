@@ -1,6 +1,6 @@
 
     /*
-         Simple JQuery Mail Send.
+         Simple JQuery Mail Send Demo.
          by Andrey Starkov
          im@andreystarkov.ru
     */
