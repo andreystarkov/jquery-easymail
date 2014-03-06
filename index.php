@@ -24,7 +24,7 @@
                     <input class="hide" type="text" name="name" placeholder="Зовут так-то" />
                     <textarea name="text" class="hide" placeholder="Ну и такие-то дела"></textarea>
                     <div class="btns">
-                    <div id="btn-fresh" class="btn-send pale hide">Ещё!</div>
+                    <div id="btn-fresh" class="btn-send pale hide">хуйня</div>
                     <div id="btn-mail" class="btn-send yellow hide">Типа, в общем, вот.</div>
                     </div>
             </form>
